@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Shared Style Css */
+.px16{
+    font-size: 1rem;
+}
+.px18{
+    font-size: 1.12rem;
+}
+.px20{
+    font-size: 1.25rem;
+}
+.px25{
+    font-size: 1.56rem;
+}
+.px45{
+    font-size: 2.0rem;
+}
+.px64{
+    font-size: 2.5rem;
+}
+.bold{
+    font-weight: 700;
+}
+.semibold{
+    font-weight: 600;
+}
+.mediam{
+    font-weight: 500;
+}
+
+.main-margin{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.margin-up-gap{
+    margin-top: 50px;
+}
+.bg-orange{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.display-flex{
+    display: flex;
+}
+
+/* header manu and logo style */
+.manu li{
+    list-style: none;
+
+}
+.manu a{
+    text-decoration: none;
+    margin-right: 30px;
+    color: gray;
+
+}
+.manu-logo-container{
+    padding: 20px 0px;
+}
+.manu-logo-container h2{
+    text-align: center;
+}
+.manu ul{
+    justify-content: center;
+}
+/* Title design */
+.title-container{
+    padding: 50px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+.title-container h2, p, button{
+    margin: 10px 0px;
+    
+}
+
+.btn{
+    background-color: #FF900E;
+    padding: 21px 25px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+/* Header Image Style */
+.img-container{
+    padding: 0px 20px 30px 20px;
+    width: 100%;
+}
+.img-container img{
+    width: calc(100% - 40px);
+}
+/* Quick list section */
+.qick-section{
+    flex-direction: column-reverse;
+   
+}
+.qick-list-img-container{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.qick-list-img-container img{
+    
+    width: 100%;
+}
+.quick-list-title-container{
+    text-align: center;
+    padding: 10px 20px;
+}
+.features{
+    color: #FF900E;
+}
+.quick-text{
+    color: rgb(150, 150, 150);
+    font-weight: 200;
+}
+/* love and enjoy section */
+.love-enjoy-container {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "first"
+    "six-img"
+    "secound"
+    "third"
+    "forth"
+    "fifth"
+    ;
+    
+}
+.first{
+    grid-area: first;
+     box-shadow: none !important;
+}
+.secound{
+    grid-area: secound;
+}
+.third{
+    grid-area: third;
+}
+.forth{
+    grid-area: forth;
+}
+.fifth{
+    grid-area: fifth;
+}
+.six-img{
+    grid-area: six-img;
+    box-shadow: none !important;
+}
+.love-enjoy-container div{
+    /* border: 2px solid greenyellow; */
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.106);
+    
+}
+
+.year{
+    width: 120px;
+    height: 50px;
+    background-color: #FF900E;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    margin-top:-100px ;
+    margin-left: -30px;
+    position: absolute;
+}
+
+
+@media screen and (min-width: 740px) {
+    .px16sm{
+    font-size: 1rem;
+}
+.px18sm{
+    font-size: 1.12rem;
+}
+.px20sm{
+    font-size: 1.25rem;
+}
+.px25sm{
+    font-size: 1.56rem;
+}
+.px45sm{
+    font-size: 2.81rem;
+}
+.px64sm{
+    font-size: 4rem;
+}
+.bold{
+    font-weight: 700;
+}
+.semibold{
+    font-weight: 600;
+}
+.mediam{
+    font-weight: 500;
+}
+.sm-display-flex{
+    display: flex;
+}
+/* Header and manu Style */
+.manu-logo-container {
+    justify-content: space-between;
+    align-items: center;
+}
+.manu-logo-container h2{
+    text-align: left;
+}
+/* Quick list section */
+.qick-section{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    padding-left: 50px;
+    padding-right: 50px;
+   
+}
+.qick-list-img-container{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.qick-list-img-container img{
+    
+    width: 100%;
+}
+.quick-list-title-container{
+    text-align: left;
+    padding: 10px 100px;
+    width: 50%;
+}
+/* love and enjoy */
+.love-enjoy-container {
+    grid-template-areas: 
+    "first     six-img"
+    "secound    six-img"
+    "third      six-img"
+    "forth      six-img"
+    "fifth      six-img"
+    ;
+}
+
+    
+}
