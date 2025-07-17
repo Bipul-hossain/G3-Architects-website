@@ -45,7 +45,7 @@
     margin: 0 auto;
 }
 .margin-up-gap{
-    margin-top: 50px;
+    margin-top: 100px;
 }
 .bg-orange{
     background-color: rgba(255, 144, 14, 0.1);
@@ -181,6 +181,64 @@
     position: absolute;
 }
 
+/* some facts */
+.some-facts-section{
+    text-align: center;
+}
+.some-facts-section p{
+    max-width: 600px;
+    padding: 0px 50px;
+}
+
+.card-container{
+    margin:0px 30px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    padding-top:50px ;
+}
+.card-container div{
+    border: 2px solid goldenrod;
+    max-height: 300px;
+    max-width: 300px;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.soponsor-container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.sponsor-image-container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+}
+.sponsor-image-container img{
+    filter: grayscale();
+}
+
+footer{
+
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+footer p{
+    padding: 10px;
+
+
+
+}
+
 
 @media screen and (min-width: 740px) {
     .px16sm{
@@ -255,6 +313,35 @@
     "forth      six-img"
     "fifth      six-img"
     ;
+}
+
+.some-facts-section{
+    text-align: left;
+}
+.some-facts-section p{
+    max-width: 600px;
+}
+
+.card-container{
+    margin:0px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    padding-top:50px ;
+}
+.card-container div{
+    border: 2px solid goldenrod;
+    max-height: 300px;
+    max-width: 300px;
+    padding: 30px;
+    border-radius: 8px;
+}
+/* sponsor */
+.soponsor-container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
     
